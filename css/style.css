@@ -1,0 +1,90 @@
+*{margin: 0; padding: 0;}
+html,body{height: 100%;}
+
+@font-face{
+	src: url("../fonts/Lato-Light.ttf");
+	font-family: "Lato";
+}
+
+/*================HEADER================*/
+.header{
+	height: auto;
+	padding: 5px;
+	background: #101d42;
+	text-align: center;
+	font-family: "Lato";
+	color: white;}
+.header span{font-size: 1.5em;}
+
+/*================SECTION================*/
+.section{
+	height: auto;
+	margin-top: 10px;
+	background: white;}
+
+.container_section{
+	height: auto;
+	background: white;}
+
+.title_section{
+	width: 100px;
+	height: auto;
+	margin: 0 auto;
+	background: white;
+	text-align: center;
+	font-family: "Lato";
+	font-size: 1.1em;}
+.title_section ul{
+	padding: 0;
+	margin: 0;}
+.title_section ul li{
+	display: block;
+	width: 100px;
+	height: auto;
+	margin-bottom: 20px;
+	padding: 2px;
+	cursor: pointer;
+	box-shadow: 1px 1px 2px #ccc;
+	border-radius: 5px;
+	background: white;
+	color: #252422;}
+.title_section ul li i{
+	width: 30px;
+	height: 30px;
+	padding: 5px 0px;
+	margin-top: 2px;
+	border-radius: 30px;
+	box-shadow: 2px 2px 3px #ccc;
+	font-size: 1.1em;
+	color: grey;}
+
+.content_section{
+	display: none;
+	height: 400px;
+	margin-top: 5px;
+	background: brown;}
+
+#pagina_inicial{display: block; background: yellow;}
+#empresa{background: red;}
+#servico{background: orange;}
+#cliente{background: blue;}
+#parceiro{background: brown;}
+#contato{background: black;}
+
+
+/*================FOOTER================*/
+.footer{}
+
+
+/*================BREAKPOINTS================*/
+@media screen and (min-width: 768px){
+	.title_section{
+		width: 677px;
+		overflow: hidden;}
+	.title_section ul li{
+		display: inline-block;
+		float: left;
+		margin-bottom: 0px;
+		margin-left: 15px;}
+	.title_section ul li:nth-child(1){margin-left: 0px;}
+}
