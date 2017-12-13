@@ -19,12 +19,46 @@ html,body{height: 100%;}
 /*================SECTION================*/
 .section{
 	height: auto;
-	margin-top: 10px;
+	margin-top: 20%;
 	background: white;}
 
 .container_section{
 	height: auto;
 	background: white;}
+
+.container_section_small{
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: green;}
+
+.content_section_small{
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: brown;}
+
+.btn_close_content_section{
+	position: relative;
+	float: right;
+	width: 35px;
+	height: 35px;
+	top: 10px;
+	border-radius: 35px;
+	border: none;
+	outline: none;
+	background: red;
+	font-size: 1.3em;
+	color: white;}
+
+#content_pagina_inicial_small{background: yellow;}
+#content_empresa_small{background: red;}
+#content_servico_small{background: orange;}
+#content_cliente_small{background: blue;}
+#content_parceiro_small{background: purple;}
+#content_contato_small{background: black;}
 
 .title_section{
 	width: 100px;
@@ -38,7 +72,6 @@ html,body{height: 100%;}
 	padding: 0;
 	margin: 0;}
 .title_section ul li{
-	display: block;
 	width: 100px;
 	height: auto;
 	margin-bottom: 20px;
@@ -57,22 +90,7 @@ html,body{height: 100%;}
 	box-shadow: 2px 2px 3px #ccc;
 	font-size: 1.1em;
 	color: grey;}
-
-.content_section{
-	display: none;
-	height: 400px;
-	margin-top: 5px;
-	background: brown;}
-
-#content_pagina_inicial{
-	display: block;
-	background: yellow;}
-#content_empresa{background: red;}
-#content_servico{background: orange;}
-#content_cliente{background: blue;}
-#content_parceiro{background: brown;}
-#content_contato{background: black;}
-
+.li_large{display: none;}
 
 /*================FOOTER================*/
 .footer{}
@@ -80,13 +98,28 @@ html,body{height: 100%;}
 
 /*================BREAKPOINTS================*/
 @media screen and (min-width: 768px){
+	.section{margin-top: 10px;}
 	.title_section{
 		width: 677px;
 		overflow: hidden;}
-	.title_section ul li{
+	.title_section ul .li_small{display: none;}
+	.title_section ul .li_large{
 		display: inline-block;
 		float: left;
 		margin-bottom: 0px;
 		margin-left: 15px;}
-	.title_section ul li:nth-child(1){margin-left: 0px;}
+	.title_section ul .li_large:nth-child(1){margin-left: 0px;}
+
+	.content_section{
+		display: none;
+		height: 400px;
+		margin-top: 5px;
+		background: brown;}
+
+	#content_pagina_inicial{display: block; background: yellow;}
+	#content_empresa{background: red;}
+	#content_servico{background: orange;}
+	#content_cliente{background: blue;}
+	#content_parceiro{background: purple;}
+	#content_contato{background: black;}
 }

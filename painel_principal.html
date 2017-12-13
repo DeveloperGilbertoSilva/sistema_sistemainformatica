@@ -4,6 +4,7 @@
 	<title>Painel Principal - Sistema Informática</title>
 
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width; initial-scale=1">
 <!--===================CSS===================-->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-3.3.7-dist/css/bootstrap.css">
@@ -12,7 +13,44 @@
 	<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
 </head>
 <body>
+	<div class="container_section_small">
+		<div id="content_pagina_inicial_small" class="content_section_small col-xs-12">
+			<button class="btn_close_content_section">
+				<i class="fa fa-close"></i>
+			</button>
+		</div>
 
+		<div id="content_empresa_small" class="content_section_small col-xs-12">
+			<button class="btn_close_content_section">
+				<i class="fa fa-close"></i>
+			</button>
+		</div>
+
+		<div id="content_servico_small" class="content_section_small col-xs-12">
+			<button class="btn_close_content_section">
+				<i class="fa fa-close"></i>
+			</button>
+		</div>
+
+		<div id="content_cliente_small" class="content_section_small col-xs-12">
+			<button class="btn_close_content_section">
+				<i class="fa fa-close"></i>
+			</button>
+		</div>
+
+		<div id="content_parceiro_small" class="content_section_small col-xs-12">
+			<button class="btn_close_content_section">
+				<i class="fa fa-close"></i>
+			</button>
+		</div>
+
+		<div id="content_contato_small" class="content_section_small col-xs-12">
+			<button class="btn_close_content_section">
+				<i class="fa fa-close"></i>
+			</button>
+		</div>
+	</div>
+	
 	<div class="container-fluid">
 		<div class="row">
 <!--======================================HEADER======================================-->		
@@ -24,32 +62,65 @@
 				<div class="container_section col-xs-12">
 					<div class="title_section">
 						<ul type="none">
-							<li id="li_pagina_inicial">
+							<li id="li_pagina_inicial" class="li_large">
 								<i class="fa fa-home"></i><br/>
 								Página Inicial
 							</li>
 							
-							<li id="li_empresa">
+							<li id="li_empresa" class="li_large">
 								<i class="fa fa-info"></i><br/>
 								A Empresa
 							</li>
 							
-							<li id="li_servico">
+							<li id="li_servico" class="li_large">
 								<i class="fa fa-cogs"></i><br/>
 								Serviços
 							</li>
 							
-							<li id="li_cliente">
+							<li id="li_cliente" class="li_large">
 								<i class="fa fa-user"></i><br/>
 								Clientes
 							</li>
 							
-							<li id="li_parceiro">
+							<li id="li_parceiro" class="li_large">
 								<i class="fa fa-users"></i><br/>
 								Parceiros
 							</li>
 							
-							<li id="li_contato">
+							<li id="li_contato" class="li_large">
+								<i class="fa fa-phone"></i><br/>
+								Contato
+							</li>
+
+							
+							<!--=======================MENU-SMALL=======================-->
+
+							<li id="li_pagina_inicial_small" class="li_small">
+								<i class="fa fa-home"></i><br/>
+								Página Inicial
+							</li>
+							
+							<li id="li_empresa_small" class="li_small">
+								<i class="fa fa-info"></i><br/>
+								A Empresa
+							</li>
+							
+							<li id="li_servico_small" class="li_small">
+								<i class="fa fa-cogs"></i><br/>
+								Serviços
+							</li>
+							
+							<li id="li_cliente_small" class="li_small">
+								<i class="fa fa-user"></i><br/>
+								Clientes
+							</li>
+							
+							<li id="li_parceiro_small" class="li_small">
+								<i class="fa fa-users"></i><br/>
+								Parceiros
+							</li>
+							
+							<li id="li_contato_small" class="li_small">
 								<i class="fa fa-phone"></i><br/>
 								Contato
 							</li>
@@ -70,7 +141,81 @@
 <script src="js/script.js"></script>
 <script type="text/javascript">
 	$(document).ready(function(){
-		$("#li_pagina_inicial").click(function(){
+		/*================SMALL================*/
+		$("#li_pagina_inicial_small").click(function(){
+			$(".container-fluid").hide();
+			$(".container_section_small").show();
+			$("#content_pagina_inicial_small").show();
+			$("#content_empresa_small").hide();
+			$("#content_servico_small").hide();
+			$("#content_cliente_small").hide();
+			$("#content_parceiro_small").hide();
+			$("#content_contato_small").hide();
+		});
+
+		$("#li_empresa_small").click(function(){
+			$(".container-fluid").hide();
+			$(".container_section_small").show();
+			$("#content_pagina_inicial_small").hide();
+			$("#content_empresa_small").show();
+			$("#content_servico_small").hide();
+			$("#content_cliente_small").hide();
+			$("#content_parceiro_small").hide();
+			$("#content_contato_small").hide();
+		});
+
+		$("#li_servico_small").click(function(){
+			$(".container-fluid").hide();
+			$(".container_section_small").show();
+			$("#content_pagina_inicial_small").hide();
+			$("#content_empresa_small").hide();
+			$("#content_servico_small").show();
+			$("#content_cliente_small").hide();
+			$("#content_parceiro_small").hide();
+			$("#content_contato_small").hide();
+		});
+
+		$("#li_cliente_small").click(function(){
+			$(".container-fluid").hide();
+			$(".container_section_small").show();
+			$("#content_pagina_inicial_small").hide();
+			$("#content_empresa_small").hide();
+			$("#content_servico_small").hide();
+			$("#content_cliente_small").show();
+			$("#content_parceiro_small").hide();
+			$("#content_contato_small").hide();
+		});
+
+		$("#li_parceiro_small").click(function(){
+			$(".container-fluid").hide();
+			$(".container_section_small").show();
+			$("#content_pagina_inicial_small").hide();
+			$("#content_empresa_small").hide();
+			$("#content_servico_small").hide();
+			$("#content_cliente_small").hide();
+			$("#content_parceiro_small").show();
+			$("#content_contato_small").hide();
+		});
+
+		$("#li_contato_small").click(function(){
+			$(".container-fluid").hide();
+			$(".container_section_small").show();
+			$("#content_pagina_inicial_small").hide();
+			$("#content_empresa_small").hide();
+			$("#content_servico_small").hide();
+			$("#content_cliente_small").hide();
+			$("#content_parceiro_small").hide();
+			$("#content_contato_small").show();
+		});
+
+		$(".btn_close_content_section").click(function(){
+			$(".container-fluid").show();
+			$(".container_section_small").hide();
+		});
+
+		
+		/*================LARGE================*/
+			$("#li_pagina_inicial").click(function(){
 			$("#content_pagina_inicial").show();
 			$("#content_empresa").hide();
 			$("#content_servico").hide();
@@ -82,7 +227,7 @@
 		$("#li_empresa").click(function(){
 			$("#content_pagina_inicial").hide();
 			$("#content_empresa").show();
-			$("#content_servico").hide();
+			$("#content_servico").hide ();
 			$("#content_cliente").hide();
 			$("#content_parceiro").hide();
 			$("#content_contato").hide();
@@ -123,6 +268,7 @@
 			$("#content_parceiro").hide();
 			$("#content_contato").show();
 		});
+	
 	});
 </script>
 </body>
