@@ -19,7 +19,7 @@ html,body{height: 100%;}
 /*================SECTION================*/
 .section{
 	height: auto;
-	margin-top: 20%;
+	margin-top: 15%;
 	background: white;}
 
 .container_section{
@@ -60,7 +60,7 @@ html,body{height: 100%;}
 #content_parceiro_small{background: purple;}
 #content_contato_small{background: black;}
 
-.title_section{
+.container_section{
 	width: 100px;
 	height: auto;
 	margin: 0 auto;
@@ -68,10 +68,11 @@ html,body{height: 100%;}
 	text-align: center;
 	font-family: "Lato";
 	font-size: 1.1em;}
-.title_section ul{
+.container_section ul{
 	padding: 0;
 	margin: 0;}
-.title_section ul li{
+
+.li_small{
 	width: 100px;
 	height: auto;
 	margin-bottom: 20px;
@@ -81,7 +82,7 @@ html,body{height: 100%;}
 	border-radius: 5px;
 	background: white;
 	color: #252422;}
-.title_section ul li i{
+.li_small i{
 	width: 30px;
 	height: 30px;
 	padding: 5px 0px;
@@ -90,6 +91,7 @@ html,body{height: 100%;}
 	box-shadow: 2px 2px 3px #ccc;
 	font-size: 1.1em;
 	color: grey;}
+
 .li_large{display: none;}
 
 /*================FOOTER================*/
@@ -97,29 +99,83 @@ html,body{height: 100%;}
 
 
 /*================BREAKPOINTS================*/
-@media screen and (min-width: 768px){
-	.section{margin-top: 10px;}
-	.title_section{
-		width: 677px;
-		overflow: hidden;}
-	.title_section ul .li_small{display: none;}
-	.title_section ul .li_large{
+@media screen and (min-width: 805px){
+	.section{margin-top: 20px;}
+
+	.li_small{display: none;}
+	.li_large{
 		display: inline-block;
-		float: left;
-		margin-bottom: 0px;
-		margin-left: 15px;}
-	.title_section ul .li_large:nth-child(1){margin-left: 0px;}
+		width: 120px;
+	}
+
+	.li_large label{
+		width: 100%;
+		height: 30px;
+		padding: 2px;
+		cursor: pointer;
+		border-radius: 5px;
+		transition: 0.2s;
+		background: white;
+		font-weight: 100;
+		font-family: "Lato";}
+
+	.li_large label:hover{background: grey; color: white;}
+
+	.rd_tabs:checked ~ label{
+		background: #252422;
+		color: white;}
+
+	.rd_tabs{display: none;}
 
 	.content_section{
 		display: none;
+		position: absolute;
+		min-width: 768px;
 		height: 400px;
-		margin-top: 5px;
-		background: brown;}
+		left: 50%;
+		margin-left: -384px;
+		cursor: default;
+		background: orange;
+	}
 
-	#content_pagina_inicial{display: block; background: yellow;}
-	#content_empresa{background: red;}
-	#content_servico{background: orange;}
-	#content_cliente{background: blue;}
-	#content_parceiro{background: purple;}
-	#content_contato{background: black;}
+	.rd_tabs:checked ~ .content_section{display: block;}
+
+	#content_pagina_inicial{display: block;}
+}
+
+@media screen and (min-width: 960px){
+	.content_section{
+		min-width: 960px;
+		margin-left: -480px;}
+}
+
+@media screen and (min-width: 1200px){
+	.content_section{
+		min-width: 1200px;
+		margin-left: -600px;}
+}
+
+
+@media screen and (min-width: 1400px){
+	.content_section{
+		min-width: 1400px;
+		margin-left: -700px;}
+}
+
+@media screen and (min-width: 1600px){
+	.content_section{
+		min-width: 1600px;
+		margin-left: -800px;}
+}
+
+@media screen and (min-width: 1900px){
+	.content_section{
+		min-width: 1900px;
+		margin-left: -950px;}
+}
+
+@media screen and (min-width: 2200px){
+	.content_section{
+		min-width: 2200px;
+		margin-left: -1100px;}
 }
