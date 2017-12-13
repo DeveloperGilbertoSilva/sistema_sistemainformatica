@@ -24,43 +24,43 @@
 				<div class="container_section col-xs-12">
 					<div class="title_section">
 						<ul type="none">
-							<li>
+							<li id="li_pagina_inicial">
 								<i class="fa fa-home"></i><br/>
 								Página Inicial
 							</li>
 							
-							<li>
+							<li id="li_empresa">
 								<i class="fa fa-info"></i><br/>
 								A Empresa
 							</li>
 							
-							<li>
+							<li id="li_servico">
 								<i class="fa fa-cogs"></i><br/>
 								Serviços
 							</li>
 							
-							<li>
+							<li id="li_cliente">
 								<i class="fa fa-user"></i><br/>
 								Clientes
 							</li>
 							
-							<li>
+							<li id="li_parceiro">
 								<i class="fa fa-users"></i><br/>
 								Parceiros
 							</li>
 							
-							<li>
+							<li id="li_contato">
 								<i class="fa fa-phone"></i><br/>
 								Contato
 							</li>
 						</ul>
 					</div>
-					<div id="pagina_inicial" class="content_section col-xs-12"></div>
-					<div id="emrpesa" class="content_section col-xs-12"></div>
-					<div id="servico" class="content_section col-xs-12"></div>
-					<div id="cliente" class="content_section col-xs-12"></div>
-					<div id="parceiro" class="content_section col-xs-12"></div>
-					<div id="contato" class="content_section col-xs-12"></div>
+					<div id="content_pagina_inicial" class="content_section col-xs-12"></div>
+					<div id="content_empresa" class="content_section col-xs-12"></div>
+					<div id="content_servico" class="content_section col-xs-12"></div>
+					<div id="content_cliente" class="content_section col-xs-12"></div>
+					<div id="content_parceiro" class="content_section col-xs-12"></div>
+					<div id="content_contato" class="content_section col-xs-12"></div>
 				</div>
 			</section>
 <!--======================================FOOTER======================================-->			
@@ -68,6 +68,62 @@
 		</div>
 	</div>
 <script src="js/script.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#li_pagina_inicial").click(function(){
+			$("#content_pagina_inicial").show();
+			$("#content_empresa").hide();
+			$("#content_servico").hide();
+			$("#content_cliente").hide();
+			$("#content_parceiro").hide();
+			$("#content_contato").hide();
+		});
 
+		$("#li_empresa").click(function(){
+			$("#content_pagina_inicial").hide();
+			$("#content_empresa").show();
+			$("#content_servico").hide();
+			$("#content_cliente").hide();
+			$("#content_parceiro").hide();
+			$("#content_contato").hide();
+		});
+
+		$("#li_servico").click(function(){
+			$("#content_pagina_inicial").hide();
+			$("#content_empresa").hide();
+			$("#content_servico").show();
+			$("#content_cliente").hide();
+			$("#content_parceiro").hide();
+			$("#content_contato").hide();
+		});
+
+		$("#li_cliente").click(function(){
+			$("#content_pagina_inicial").hide();
+			$("#content_empresa").hide();
+			$("#content_servico").hide();
+			$("#content_cliente").show();
+			$("#content_parceiro").hide();
+			$("#content_contato").hide();
+		});
+
+		$("#li_parceiro").click(function(){
+			$("#content_pagina_inicial").hide();
+			$("#content_empresa").hide();
+			$("#content_servico").hide();
+			$("#content_cliente").hide();
+			$("#content_parceiro").show();
+			$("#content_contato").hide();
+		});
+
+		$("#li_contato").click(function(){
+			$("#content_pagina_inicial").hide();
+			$("#content_empresa").hide();
+			$("#content_servico").hide();
+			$("#content_cliente").hide();
+			$("#content_parceiro").hide();
+			$("#content_contato").show();
+		});
+	});
+</script>
 </body>
 </html>

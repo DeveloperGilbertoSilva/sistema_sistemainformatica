@@ -64,12 +64,14 @@ html,body{height: 100%;}
 	margin-top: 5px;
 	background: brown;}
 
-#pagina_inicial{display: block; background: yellow;}
-#empresa{background: red;}
-#servico{background: orange;}
-#cliente{background: blue;}
-#parceiro{background: brown;}
-#contato{background: black;}
+#content_pagina_inicial{
+	display: block;
+	background: yellow;}
+#content_empresa{background: red;}
+#content_servico{background: orange;}
+#content_cliente{background: blue;}
+#content_parceiro{background: brown;}
+#content_contato{background: black;}
 
 
 /*================FOOTER================*/
