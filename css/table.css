@@ -1,0 +1,45 @@
+@font-face{
+	src: url("../fonts/Lato-Light.ttf");
+	font-family: "Lato";
+}
+
+.btn_inserir{
+	margin-top: 10px;
+	padding: 5px;
+	border: none;
+	border-radius: 5px;
+	background: grey;
+	color: white;}
+
+.table_painel{
+	min-width: 200px;
+	margin-top: 35px;
+	text-align: center; 
+	font-family: "Lato";}
+
+.table_painel thead{
+	background: #252422;
+	color: white;
+}
+.table_painel thead th{
+	width: auto;
+	padding: 5px;
+	text-align: center;
+	font-weight: 100;
+}
+
+.table_painel tbody td{
+	padding: 5px;
+	box-shadow: 2px 2px 3px #ccc;
+	border-radius: 5px;
+}
+
+
+@media screen and (min-width: 768px){
+	.btn_inserir{
+		margin-top: 0;
+		margin-bottom: 10px;}
+	.table_painel{
+		margin-top: 0px;
+	}
+}
